@@ -1,4 +1,4 @@
-name: Exploring Variables and Secret
+name: Matrix Configurations
 on:
     push:
     workflow_dispatch: 
