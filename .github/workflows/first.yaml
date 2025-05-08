@@ -10,11 +10,14 @@ jobs:
     steps: 
     - name: checkout
       uses: actions/checkout@v4
-      
+
     - name: First step
       run: | 
         echo "Welcome to Github Actions"
         ls -lart
         cat index.html
+
+    - name: ASCII Artwork
+      run : cowsay -f dragon "Run for Cover, I am A Dragon.."  >> dragon.txt
 
 
