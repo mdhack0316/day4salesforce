@@ -1,0 +1,15 @@
+name: Mayank Github actions test
+on: 
+  push: 
+    branches: master
+
+jobs: 
+  testing: 
+    name: Testing Phase
+    runs-on: ubuntu-latest
+    steps: 
+    - name: First step
+      run: ls
+
+    - name: Second step
+      run: echo index.html
