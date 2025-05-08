@@ -10,8 +10,11 @@ jobs:
     steps: 
     - name: checkout
       uses: actions/checkout@v4
+      
     - name: First step
-      run: ls
+      run: | 
+        echo "Welcome to Github Actions"
+        ls -lart
+        cat index.html
 
-    - name: Second step
-      run: cat index.html
+
