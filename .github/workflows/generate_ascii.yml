@@ -12,8 +12,8 @@ jobs:
     - name: list all files
       run: ls -lart
 
-    - name: Executing Shell Script
+    - name: Executing Shell Script .
       run: |
-        chmod +x ./ascii-script.sh
+        chmod +x ascii-script.sh
         ./ascii-script.sh
 
