@@ -6,17 +6,14 @@ jobs:
   myartwork:
     runs-on: ubuntu-latest
     steps:
-    - name: install of cowsay
-      run: sudo apt-get install -y cowsay
-
-    - name: running commands
-      run: cowsay -f dragon "Run for Cover, I am A Dragon.."  >> dragon.txt
-
-    - name: testing file
-      run: | 
-        cat dragon.txt 
-        grep -i dragon dragon.txt
+    - name: checkout 
+      uses: actions/checkout@v4
 
     - name: list all files
       run: ls -lart
+
+    - name: Executing Shell Script
+      run: |
+        chmod +x ./ascii-script.sh
+        ./ascii-script.sh
 
