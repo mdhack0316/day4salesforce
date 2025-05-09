@@ -19,7 +19,7 @@ on:
     paths-ignore:       #  workflow will only run when a pull request that includes a change on any file other than README.md
       - README.md
     branches:
-        - main          # configures your workflow to only run on pull requests that target specific branches. 
+      - master       # configures your workflow to only run on pull requests that target specific branches. 
 
 jobs:
   hello:
